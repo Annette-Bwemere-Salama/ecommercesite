@@ -1,0 +1,53 @@
+body{
+    background-color: aquamarine;
+}
+.container{
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    margin-top: 75px;
+    margin-right: 470px;
+    margin-bottom: 50px;
+    margin-left: 400px;
+    background-color: white;
+    padding: 1.5em;
+    color: #6c6767
+}
+#gratuit{
+    height: 126px;
+    width: 491px;
+    left: 0px;
+    top: -2px;
+    border-radius: nullpx;
+}
+h1{
+    margin-left: 75px;
+    color: #6c6767
+}
+#gratuit{
+    font-family:25px;
+    font-size: 15px;
+    padding:10px 0px 0px 10px;
+    color: #6c6767;
+    margin-bottom: -10px;
+    
+}
+p .decalage{
+margin: left 5px; ;
+}
+.petitp{
+    font-size: 8px;
+    color: red;
+}
+#button{
+    margin-left: 110px;
+    background-color: darkgreen;
+    color: white;
+    padding: 10px 15px 10px 15px;
+    margin-bottom: 20px;
+
+}
+.input{
+    color: red;
+
+}
