@@ -15,7 +15,7 @@ body{
 }
 #gratuit{
     height: 126px;
-    width: 491px;
+    width: 501px;
     left: 0px;
     top: -2px;
     border-radius: nullpx;
@@ -48,6 +48,8 @@ margin: left 5px; ;
 
 }
 .input{
-
+    height: 25px;
+    width: 350px;
     border-color: red;
+
 }
