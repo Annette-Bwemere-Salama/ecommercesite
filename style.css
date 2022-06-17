@@ -1,15 +1,3 @@
-
-@media screen and (min-width: 900px) {
-  .ico-mobile{
-      display: none;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  main{
-      margin-top: 90px;
-      margin-right: 0;
-  }
 body{
     background-color: aquamarine;
 }
@@ -17,10 +5,8 @@ body{
     justify-content: center;
     align-items: center;
     font-family: sans-serif;
-    margin-top: 75px;
-    margin-right: 470px;
-    margin-bottom: 50px;
-    margin-left: 400px;
+    width: 300px;
+    margin: auto;
     background-color: white;
     padding: 1.5em;
     color: #6c6767
@@ -38,9 +24,8 @@ h1{
 #gratuit{
     font-family: 25px;
     font-size: 15px;
-    padding:10px 0px 0px 10px;
+    padding: auto;
     color: #6c6767;
-    margin-bottom: -10px;
     
 }
 p, .decalage{
@@ -60,7 +45,9 @@ p, .decalage{
 }
 .input{
     height: 25px;
-    width: 350px;
+    width: 315px;
     border-color: red;
-
 }
+
+/*Page questionnaire commencement*/
+
