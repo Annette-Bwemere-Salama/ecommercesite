@@ -19,7 +19,9 @@ body{
 }
 h1{
     margin-left: 75px;
-    color: #6c6767
+    color: #6c6767;
+    font-size: 20px;
+    
 }
 #gratuit{
     font-family: 25px;
@@ -39,6 +41,9 @@ p, .decalage{
 #button{
     background-color: darkgreen;
     color: white;
+    align-items: center;
+    padding: 10px 15px 10px 15px;
+    margin-left: 70px;
 
 }
 .input{
