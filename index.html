@@ -1,29 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
     <title>KDA QUIZ APP</title>
 </head>
+
 <body>
-    <div class="container">
+    <div class="container login">
         <h1>Javasript Quiz</h1>
-        <p id="gratuit">Évaluez vos connaissances en JavaScript en 
-            <br> répondant aux questions que nous avons 
+        <p id="gratuit">Évaluez vos connaissances en JavaScript en
+            <br> répondant aux questions que nous avons
             <br class="decalage"> spécialement sélectionnées pour vous.
             <br class="decalage">C'est fun et c'est gratuit.
         </p>
         <p>Nom</p>
-        <input type="text" class="input"><br>
-        <p class="petitp">N’oubliez pas de renseigner votre nom avant de commencer le Quiz.</p>
-        <p>Email</p>
-        <input type="email" name="mail" class="input"><br>
-        <p class="petitp">N’oubliez pas de renseigner votre Mail avant de commencer le Quiz.</p>
-        <a href="index1.html"><button type="submit" id="button">Commencer</button></a>
+        <form action="index1.html" method="post" class="loginForm">
+            <input type="text" class="input"><br>
+            <p class="petitp">N’oubliez pas de renseigner votre nom avant de commencer le Quiz.</p>
+            <p>Email</p>
+            <input type="email" name="mail" class="input"><br>
+            <p class="petitp">N’oubliez pas de renseigner votre Mail avant de commencer le Quiz.</p>
+            <button type="submit" id="button">Commencer</button>
+        </form>
+
+    </div>
+    <div class="container questions">
+        <p id="h1">Quel est le type d'un fichier javascript ?</p>
+        <p id="petitP"> Question 1/15 30</p>
+        <div>
+            <input type="text" id="buttonV">
+        </div>
+        <form action="" method="post" class="questionForm">
+            <div class="inputs">
+                <div class="input1">
+                    <input type="radio">
+                    <label for="radio">.js</label>
+                </div>
+                <div class="input2">
+                    <input type="radio">
+                    <label for="radio">ts</label>
+                </div>
+                <div class="input3">
+                    <input type="radio">
+                    <label for="radio">.jsx</label>
+                </div>
+                <div class="input4">
+                    <input type="radio">
+                    <label for="radio">.jsr</label>
+                </div>
+            </div>
+            <div class="button">
+                <button type="QUITTEZ" id="button1">Quittez</button>
+                <button type="submit" id="button2">Suivant</button>
+            </div>
+        </form>
     </div>
 
- <script src="index.js"></script>
+    <section>
+        <div id="containeResults">
+            <div id="containerSoumission">
+                <h3>Annette</h3>
+                <h3>bwemereannette@gmail.com</h3>
+            </div>
+            <div id="cerle">
+                <img src="images/succes.png" alt="">
+                <div id="nombre">14/15</div>
+                <a href="index.html"><button id="btn" type="submit">Acceuil</button></a>
+            </div>
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+    <script src="js/index.js"></script>
 </body>
+
 </html>

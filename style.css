@@ -52,5 +52,9 @@ p, .decalage{
     border-color: red;
 }
 
+
 /*Page questionnaire commencement*/
 
+.questions{
+    display: none;
+}
