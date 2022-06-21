@@ -47,6 +47,24 @@ questions3.addEventListener('submit', (e) => {
     console.log(questions04);
 })
 
+const question05 = document.querySelector('.questions05')
+questions04.addEventListener('submit', (e) => {
+    e.preventDefault()
+    question05.style.display = 'block'
+    questions04.style.display = 'none'
+    console.log(question05);
+})
+
+const question06 = document.querySelector('.questions06');
+question05.addEventListener('submit', (e) => {
+    e.preventDefault()
+    question06.style.display = 'block'
+    question05.style.display = 'none'
+    console.log(question06);
+})
+
+
+
 
 
 /*const containeResults = document.querySelector('#containeResults');
