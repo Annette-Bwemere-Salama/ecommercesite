@@ -79,6 +79,14 @@ question07.addEventListener('submit', (e) => {
     console.log(questions08);
 })
 
+const questions09 = document.querySelector('.questions09')
+questions08.addEventListener('submit', (e) => {
+    e.preventDefault()
+    questions09.style.display = 'block'
+    questions08.style.display = 'none'
+    console.log(questions09);
+})
+
 
 
 
