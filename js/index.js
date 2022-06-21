@@ -88,6 +88,13 @@ questions08.addEventListener('submit', (e) => {
 })
 
 
+const questions10 = document.querySelector('.questions10')
+questions09.addEventListener('submit', (e) => {
+    e.preventDefault()
+    questions10.style.display = 'block'
+    questions09.style.display = 'none'
+    console.log(questions10);
+})
 
 
 /*const containeResults = document.querySelector('#containeResults');
