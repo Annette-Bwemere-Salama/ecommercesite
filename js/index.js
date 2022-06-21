@@ -96,6 +96,14 @@ questions09.addEventListener('submit', (e) => {
     console.log(questions10);
 })
 
+const questions11 = document.querySelector('.questions11')
+questions10.addEventListener('submit', (e) => {
+    e.preventDefault()
+    questions11.style.display = 'block'
+    questions10.style.display = 'none'
+    console.log(questions11);
+})
+
 
 /*const containeResults = document.querySelector('#containeResults');
 questionForm.addEventListener('submit', (e) => {
