@@ -1,7 +1,8 @@
-body{
+body {
     background-color: aquamarine;
 }
-.container{
+
+.container {
     justify-content: center;
     align-items: center;
     font-family: sans-serif;
@@ -11,34 +12,41 @@ body{
     padding: 1.5em;
     color: #6c6767
 }
-#gratuit{
+
+#gratuit {
     height: 126px;
     width: 501px;
     left: 0px;
     top: -2px;
 }
-h1{
+
+h1 {
     margin-left: 75px;
     color: #6c6767;
     font-size: 20px;
-    
+
 }
-#gratuit{
+
+#gratuit {
     font-family: 25px;
     font-size: 15px;
     padding: auto;
     color: #6c6767;
     margin-bottom: 0px;
-    
+
 }
-p, .decalage{
-  margin-left: 5px;
+
+p,
+.decalage {
+    margin-left: 5px;
 }
-.petitp{
+
+.petitp {
     font-size: 8px;
     color: red;
 }
-#button{
+
+#button {
     background-color: darkgreen;
     color: white;
     align-items: center;
@@ -46,7 +54,8 @@ p, .decalage{
     margin-left: 70px;
 
 }
-.input{
+
+.input {
     height: 25px;
     width: 315px;
     border-color: red;
@@ -55,6 +64,22 @@ p, .decalage{
 
 /*Page questionnaire commencement*/
 
-.questions{
+.questions {
+    display: none;
+}
+
+.questions01 {
+    display: none;
+}
+
+.questions02 {
+    display: none;
+}
+
+.questions03 {
+    display: none;
+}
+
+.questions04 {
     display: none;
 }

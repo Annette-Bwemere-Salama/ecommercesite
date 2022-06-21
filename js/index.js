@@ -11,10 +11,49 @@ loginForm.addEventListener('submit', (e) => {
     login.style.display = 'none'
 });
 
-const containeResults = document.querySelector('#containeResults');
+const containerQuestions01 = document.querySelector('.questions01');
+questionForm.addEventListener('submit', (e) => {
+    e.preventDefault()
+    containerQuestions01.style.display = 'block'
+    console.log(containerQuestions01);
+    questions.style.display = 'none'
+})
+
+const questions02 = document.querySelector('.questions02');
+//on capte l'evenement
+containerQuestions01.addEventListener('submit', (e) => {
+    //annulation du comportement par defaut
+    e.preventDefault()
+    //on annule le display none pour dire l'affichage de l'element question02
+    questions02.style.display = 'block'
+    // On cache l'element containerQuestion01
+    containerQuestions01.style.display = 'none'
+    console.log(questions02);
+})
+
+const questions3 = document.querySelector('.questions03');
+questions02.addEventListener('submit', (e) => {
+    e.preventDefault()
+    questions3.style.display = 'block'
+    questions02.style.display = 'none'
+    console.log(questions3);
+})
+
+const questions04 = document.querySelector('.questions04');
+questions3.addEventListener('submit', (e) => {
+    e.preventDefault()
+    questions04.style.display = 'block'
+    questions3.style.display = 'none'
+    console.log(questions04);
+})
+
+
+
+/*const containeResults = document.querySelector('#containeResults');
 questionForm.addEventListener('submit', (e) => {
     e.preventDefault()
     containeResults.style.display = 'block'
     questions.style.display = 'none'
     console.log(containeResults, questionForm);
 });
+*/
