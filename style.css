@@ -61,6 +61,37 @@ p,
     border-color: red;
 }
 
+#containerSoumission {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#cerle,
+img {
+    width: 80px;
+    height: 80px;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+#btn {
+    background-color: rgb(31, 135, 196);
+    margin-left: 50px;
+    margin-bottom: 30px;
+    padding: 10px 20px 10px 20px;
+}
+
+#nombre {
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+#containeResults {
+    display: none;
+}
+
 
 /*Page questionnaire commencement*/
 
