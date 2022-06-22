@@ -104,12 +104,34 @@ questions10.addEventListener('submit', (e) => {
     console.log(questions11);
 })
 
+const questions12 = document.querySelector('.questions12')
+questions11.addEventListener('submit', (e) => {
+    e.preventDefault()
+    questions12.style.display = 'block'
+    questions11.style.display = 'none'
+    console.log(questions12);
+})
 
-/*const containeResults = document.querySelector('#containeResults');
-questionForm.addEventListener('submit', (e) => {
+const questions13 = document.querySelector('.questions13')
+questions12.addEventListener('submit', (e) => {
+    e.preventDefault()
+    questions13.style.display = 'block'
+    questions12.style.display = 'none'
+    console.log(questions13);
+})
+
+const questions14 = document.querySelector('.questions14')
+questions13.addEventListener('submit', (e) => {
+    e.preventDefault()
+    questions14.style.display = 'block'
+    questions13.style.display = 'none'
+    console.log(questions14);
+})
+
+const containeResults = document.querySelector('#containeResults');
+questions14.addEventListener('submit', (e) => {
     e.preventDefault()
     containeResults.style.display = 'block'
-    questions.style.display = 'none'
-    console.log(containeResults, questionForm);
+    questions14.style.display = 'none'
+    console.log(containeResults, questions14);
 });
-*/
