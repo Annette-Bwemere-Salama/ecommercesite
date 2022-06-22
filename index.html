@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="style2.css">
     <title>KDA QUIZ APP</title>
 </head>
-
 <body>
     <div class="container login">
         <h1>Javasript Quiz</h1>
@@ -20,10 +19,13 @@
         </p>
         <p>Nom</p>
         <form action="index1.html" method="post" class="loginForm">
-            <input type="text" class="input"><br>
+            <input type="text" class="input" placeholder="ex:Annette" pattern="[a-zA-Z]{3,30}"
+                required><br>
             <p class="petitp">N’oubliez pas de renseigner votre nom avant de commencer le Quiz.</p>
             <p>Email</p>
-            <input type="email" name="mail" class="input"><br>
+            <input type="text" name="mail" class="input" placeholder="ex:bwemereannette@gmail.com"
+                pattern="^([a-zA-Z0-9\.-]{4,30})@([a-zA-Z0-9]{3,10})\.([a-zA-Z]{2,5})$" required><br>
+            <!--Particularité de l'adresse mail avec patern'-->
             <p class="petitp">N’oubliez pas de renseigner votre Mail avant de commencer le Quiz.</p>
             <button type="submit" id="button">Commencer</button>
         </form>
