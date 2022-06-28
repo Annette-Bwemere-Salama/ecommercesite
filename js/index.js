@@ -8,6 +8,13 @@ let mailjouer = document.querySelector('#mailjouer');
 let btnFinal = document.querySelector('#btnFinal');
 let nom = document.querySelector('#nom');
 let mail = document.querySelector('#email');
+let Rinput = document.querySelectorAll('.Rinput')
+let nombreScore = document.getElementById('nombreScore');
+let score = 0;
+let button1 = document.querySelector('#button1');
+let quittezB = document.querySelectorAll('.quittezB')
+
+
 
 const loginForm = document.querySelector('.loginForm')
 
@@ -16,11 +23,31 @@ loginForm.addEventListener('submit', (e) => {
     questions.style.display = 'block'
     login.style.display = 'none'
     compteur();
+    console.log('score =' + score);
 });
+
+// button1.addEventListener('click', (e) => {
+//     questions02.style.display = 'none'
+//     containeResults.style.display = 'block';
+// });
+
 
 const containerQuestions01 = document.querySelector('.questions01');
 questionForm.addEventListener('submit', (e) => {
     e.preventDefault()
+    let reponseClient
+    let bonneReponse = 0;
+    for (let i = 0; i < Rinput.length; i++) {
+        if (Rinput[i].checked) {
+            reponseClient = i;
+        }
+    }
+    if (reponseClient == bonneReponse)
+        score++
+    console.log('score =' + score);
+
+
+
     containerQuestions01.style.display = 'block'
     console.log(containerQuestions01);
     questions.style.display = 'none'
@@ -196,6 +223,18 @@ function compteur() {
 
     }, 600);
 };
+
+quittezB.forEach((il) => {
+    il.addEventListener('click', function () {
+        containeResults.style.display = 'block';
+        nombreScore.innerText = `${score}/15`;
+        nomJouer.innerText = nom.value;
+        mailjouer.innerText = mail.value;
+    })
+
+})
+
+
 //quitter
 btnFinal.addEventListener('click', function () {
     questions.style.display = 'none';
