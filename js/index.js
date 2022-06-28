@@ -10,12 +10,19 @@ let nom = document.querySelector('#nom');
 let mail = document.querySelector('#email');
 let Rinput = document.querySelectorAll('.Rinput');
 let Rinput1 = document.querySelectorAll('.Rinput1');
-let Rinput3 = document.querySelector('.Rinput3');
-let Rinput4 = document.querySelector('.Rinput4');
-let Rinput5 = document.querySelector('.Rinput5');
-let Rinput6 = document.querySelector('.Rinput6');
-let Rinput7 = document.querySelector('.Rinput7');
-let Rinput8 = document.querySelector('.Rinput8');
+let Rinput2 = document.querySelectorAll('.Rinput2');
+let Rinput3 = document.querySelectorAll('.Rinput3');
+let Rinput4 = document.querySelectorAll('.Rinput4');
+let Rinput5 = document.querySelectorAll('.Rinput5');
+let Rinput6 = document.querySelectorAll('.Rinput6');
+let Rinput7 = document.querySelectorAll('.Rinput7');
+let Rinput8 = document.querySelectorAll('.Rinput8');
+let Rinput9 = document.querySelectorAll('.Rinput9');
+let Rinput10 = document.querySelectorAll('.Rinput10');
+let Rinput11 = document.querySelectorAll('.Rinput11');
+let Rinput12 = document.querySelectorAll('.Rinput11');
+let Rinput13 = document.querySelectorAll('.Rinput13');
+let Rinput14 = document.querySelectorAllG('.Rinput14');
 let nombreScore = document.getElementById('nombreScore');
 let score = 0;
 let button1 = document.querySelector('#button1');
@@ -222,8 +229,8 @@ questions08.addEventListener('submit', (e) => {
     e.preventDefault()
     let reponseClient
     let bonneReponse = 2;
-    for (let i = 0; i < Rinput.length; i++) {
-        if (Rinput[i].checked) {
+    for (let i = 0; i < Rinput8.length; i++) {
+        if (Rinput8[i].checked) {
             reponseClient = i;
         }
     }
@@ -244,8 +251,8 @@ questions09.addEventListener('submit', (e) => {
     e.preventDefault()
     let reponseClient
     let bonneReponse = 2;
-    for (let i = 0; i < Rinput.length; i++) {
-        if (Rinput[i].checked) {
+    for (let i = 0; i < Rinput9.length; i++) {
+        if (Rinput9[i].checked) {
             reponseClient = i;
         }
     }
@@ -265,9 +272,9 @@ const questions11 = document.querySelector('.questions11')
 questions10.addEventListener('submit', (e) => {
     e.preventDefault()
     let reponseClient
-    let bonneReponse = 1;
-    for (let i = 0; i < Rinput.length; i++) {
-        if (Rinput[i].checked) {
+    let bonneReponse = 2;
+    for (let i = 0; i < Rinput10.length; i++) {
+        if (Rinput10[i].checked) {
             reponseClient = i;
         }
     }
@@ -287,8 +294,8 @@ questions11.addEventListener('submit', (e) => {
     e.preventDefault()
     let reponseClient
     let bonneReponse = 1;
-    for (let i = 0; i < Rinput.length; i++) {
-        if (Rinput[i].checked) {
+    for (let i = 0; i < Rinput11.length; i++) {
+        if (Rinput11[i].checked) {
             reponseClient = i;
         }
     }
@@ -307,9 +314,9 @@ const questions13 = document.querySelector('.questions13')
 questions12.addEventListener('submit', (e) => {
     e.preventDefault()
     let reponseClient
-    let bonneReponse = 0;
-    for (let i = 0; i < Rinput.length; i++) {
-        if (Rinput[i].checked) {
+    let bonneReponse = 1;
+    for (let i = 0; i < Rinput12.length; i++) {
+        if (Rinput12[i].checked) {
             reponseClient = i;
         }
     }
@@ -328,9 +335,9 @@ const questions14 = document.querySelector('.questions14')
 questions13.addEventListener('submit', (e) => {
     e.preventDefault()
     let reponseClient
-    let bonneReponse = 3;
-    for (let i = 0; i < Rinput.length; i++) {
-        if (Rinput[i].checked) {
+    let bonneReponse = 1;
+    for (let i = 0; i < Rinput13.length; i++) {
+        if (Rinput13[i].checked) {
             reponseClient = i;
         }
     }
@@ -349,9 +356,9 @@ const containeResults = document.querySelector('#containeResults');
 questions14.addEventListener('submit', (e) => {
     e.preventDefault()
     let reponseClient
-    let bonneReponse = 0;
-    for (let i = 0; i < Rinput.length; i++) {
-        if (Rinput[i].checked) {
+    let bonneReponse = 3;
+    for (let i = 0; i < Rinput14.length; i++) {
+        if (Rinput14[i].checked) {
             reponseClient = i;
         }
     }
