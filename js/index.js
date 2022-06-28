@@ -121,6 +121,7 @@ questions09.addEventListener('submit', (e) => {
     questions10.style.display = 'block'
     questions09.style.display = 'none'
     console.log(questions10);
+    console.log(nom.value);
     compteur();
     compteurA = 100;
 })
@@ -171,6 +172,9 @@ questions14.addEventListener('submit', (e) => {
     containeResults.style.display = 'block'
     questions14.style.display = 'none'
     console.log(containeResults, questions14);
+    console.log(nomJouer, mail);
+    nomJouer.innerText = nom.value;
+    mailjouer.innerText = mail.value;
 });
 
 //progressBar
@@ -193,12 +197,10 @@ function compteur() {
     }, 600);
 };
 //quitter
-login.addEventListener('click', function () {
+btnFinal.addEventListener('click', function () {
     questions.style.display = 'none';
     containeResults.style.display = 'block';
-    console.log(nomJouer, nom);
-    nomJouer.innerText = nom.value;
-    mailjouer.innerText = mail.value;
+
 })
 
 

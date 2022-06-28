@@ -18,13 +18,13 @@
             <br class="decalage"> spécialement sélectionnées pour vous.
             <br class="decalage">C'est fun et c'est gratuit.
         </p>
-        <p id="nom">Nom</p>
+        <p>Nom</p>
         <form action="index1.html" method="post" class="loginForm" id="loginForm">
-            <input type="text" class="input" placeholder="ex:Annette" pattern="[a-zA-Z]{3,30}" required><br>
+            <input id="nom" type="text" class="input" placeholder="ex:Annette" pattern="[a-zA-Z]{3,30}" required><br>
             <p class="petitp">
                 <!--N’oubliez pas de renseigner votre nom avant de commencer le Quiz.</p>-->
-            <p id="email">Email</p>
-            <input type="text" name="mail" class="input" placeholder="ex:bwemereannette@gmail.com"
+            <p>Email</p>
+            <input id="email" type="text" name="mail" class="input" placeholder="ex:bwemereannette@gmail.com"
                 pattern="^([a-zA-Z0-9\.-]{4,30})@([a-zA-Z0-9]{3,10})\.([a-zA-Z]{2,5})$" required><br>
             <!--Particularité de l'adresse mail avec patern'-->
             <p class="petitp">
@@ -503,7 +503,7 @@
         <div id="containeResults" class="containeResults">
             <div id="containerSoumission">
                 <h3 id="nomJouer" class="jouerNom"></h3>
-                <h3 id="g" class="jouerMail"></h3>
+                <h3 id="mailjouer" class="jouerMail"></h3>
             </div>
             <div id="cerle">
                 <img src="images/succes.png" alt="">
