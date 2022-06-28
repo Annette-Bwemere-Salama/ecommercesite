@@ -18,12 +18,12 @@
             <br class="decalage"> spécialement sélectionnées pour vous.
             <br class="decalage">C'est fun et c'est gratuit.
         </p>
-        <p>Nom</p>
+        <p id="nom">Nom</p>
         <form action="index1.html" method="post" class="loginForm" id="loginForm">
             <input type="text" class="input" placeholder="ex:Annette" pattern="[a-zA-Z]{3,30}" required><br>
             <p class="petitp">
                 <!--N’oubliez pas de renseigner votre nom avant de commencer le Quiz.</p>-->
-            <p>Email</p>
+            <p id="email">Email</p>
             <input type="text" name="mail" class="input" placeholder="ex:bwemereannette@gmail.com"
                 pattern="^([a-zA-Z0-9\.-]{4,30})@([a-zA-Z0-9]{3,10})\.([a-zA-Z]{2,5})$" required><br>
             <!--Particularité de l'adresse mail avec patern'-->
@@ -502,13 +502,13 @@
     <section>
         <div id="containeResults" class="containeResults">
             <div id="containerSoumission">
-                <h3>Annette</h3>
-                <h3>bwemereannette@gmail.com</h3>
+                <h3 id="nomJouer" class="jouerNom"></h3>
+                <h3 id="g" class="jouerMail"></h3>
             </div>
             <div id="cerle">
                 <img src="images/succes.png" alt="">
                 <div id="nombre">15/15</div>
-                <a href="index.html"><button id="btn" type="submit">Acceuil</button></a>
+                <a href="index.html"><button id="btnFinal" type="submit">Acceuil</button></a>
             </div>
         </div>
     </section>
@@ -524,9 +524,7 @@
                 <a href="index.html"><button id="btn" type="submit">Acceuil</button></a>
             </div>
         </div>
-    </section>
--->
-
+    </section>-->
     <script src="index.js"></script>
     <script src="js/index.js"></script>
 </body>

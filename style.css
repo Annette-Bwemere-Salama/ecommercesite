@@ -176,7 +176,7 @@ img {
 }
 
 #containeResults {
-    display: none;
+    display: block;
 }
 
 #h1 {
@@ -274,4 +274,8 @@ img {
     width: 100%;
     background-color: green;
 
+}
+
+#containeResults {
+    display: none;
 }

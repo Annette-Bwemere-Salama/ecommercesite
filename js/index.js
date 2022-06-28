@@ -3,6 +3,11 @@ const questions = document.querySelector('.questions');
 const questionForm = document.querySelector('.questionForm');
 console.log(login, questions)
 let compteurA = 100
+let nomJouer = document.querySelector('#nomJouer');
+let mailjouer = document.querySelector('#mailjouer');
+let btnFinal = document.querySelector('#btnFinal');
+let nom = document.querySelector('#nom');
+let mail = document.querySelector('#email');
 
 const loginForm = document.querySelector('.loginForm')
 
@@ -187,6 +192,15 @@ function compteur() {
 
     }, 600);
 };
+//quitter
+login.addEventListener('click', function () {
+    questions.style.display = 'none';
+    containeResults.style.display = 'block';
+    console.log(nomJouer, nom);
+    nomJouer.innerText = nom.value;
+    mailjouer.innerText = mail.value;
+})
+
 
 
 
