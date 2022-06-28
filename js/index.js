@@ -8,12 +8,19 @@ let mailjouer = document.querySelector('#mailjouer');
 let btnFinal = document.querySelector('#btnFinal');
 let nom = document.querySelector('#nom');
 let mail = document.querySelector('#email');
-let Rinput = document.querySelectorAll('.Rinput')
-let Rinput1 = document.querySelectorAll('.Rinput1')
+let Rinput = document.querySelectorAll('.Rinput');
+let Rinput1 = document.querySelectorAll('.Rinput1');
+let Rinput3 = document.querySelector('.Rinput3');
+let Rinput4 = document.querySelector('.Rinput4');
+let Rinput5 = document.querySelector('.Rinput5');
+let Rinput6 = document.querySelector('.Rinput6');
+let Rinput7 = document.querySelector('.Rinput7');
+let Rinput8 = document.querySelector('.Rinput8');
 let nombreScore = document.getElementById('nombreScore');
 let score = 0;
 let button1 = document.querySelector('#button1');
 let quittezB = document.querySelectorAll('.quittezB')
+
 
 
 
@@ -66,7 +73,7 @@ containerQuestions01.addEventListener('submit', (e) => {
     //annulation du comportement par defaut
     e.preventDefault()
     let reponseClient
-    let bonneReponse = 0;
+    let bonneReponse = 2;
     for (let i = 0; i < Rinput1.length; i++) {
         if (Rinput1[i].checked) {
             reponseClient = i;
@@ -90,9 +97,9 @@ const questions3 = document.querySelector('.questions03');
 questions02.addEventListener('submit', (e) => {
     e.preventDefault()
     let reponseClient
-    let bonneReponse = 1;
-    for (let i = 0; i < Rinput.length; i++) {
-        if (Rinput[i].checked) {
+    let bonneReponse = 0;
+    for (let i = 0; i < Rinput2.length; i++) {
+        if (Rinput2[i].checked) {
             reponseClient = i;
         }
     }
@@ -111,9 +118,9 @@ const questions04 = document.querySelector('.questions04');
 questions3.addEventListener('submit', (e) => {
     e.preventDefault()
     let reponseClient
-    let bonneReponse = 3;
-    for (let i = 0; i < Rinput.length; i++) {
-        if (Rinput[i].checked) {
+    let bonneReponse = 2;
+    for (let i = 0; i < Rinput3.length; i++) {
+        if (Rinput3[i].checked) {
             reponseClient = i;
         }
     }
@@ -130,9 +137,9 @@ const question05 = document.querySelector('.questions05')
 questions04.addEventListener('submit', (e) => {
     e.preventDefault()
     let reponseClient
-    let bonneReponse = 0;
-    for (let i = 0; i < Rinput.length; i++) {
-        if (Rinput[i].checked) {
+    let bonneReponse = 3;
+    for (let i = 0; i < Rinput4.length; i++) {
+        if (Rinput4[i].checked) {
             reponseClient = i;
         }
     }
@@ -152,8 +159,8 @@ question05.addEventListener('submit', (e) => {
     e.preventDefault()
     let reponseClient
     let bonneReponse = 2;
-    for (let i = 0; i < Rinput.length; i++) {
-        if (Rinput[i].checked) {
+    for (let i = 0; i < Rinput5.length; i++) {
+        if (Rinput5[i].checked) {
             reponseClient = i;
         }
     }
@@ -172,9 +179,9 @@ const question07 = document.querySelector('.questions07')
 question06.addEventListener('submit', (e) => {
     e.preventDefault()
     let reponseClient
-    let bonneReponse = 1;
-    for (let i = 0; i < Rinput.length; i++) {
-        if (Rinput[i].checked) {
+    let bonneReponse = 2;
+    for (let i = 0; i < Rinput6.length; i++) {
+        if (Rinput6[i].checked) {
             reponseClient = i;
         }
     }
@@ -193,9 +200,9 @@ const questions08 = document.querySelector('.questions08')
 question07.addEventListener('submit', (e) => {
     e.preventDefault()
     let reponseClient
-    let bonneReponse = 2;
-    for (let i = 0; i < Rinput.length; i++) {
-        if (Rinput[i].checked) {
+    let bonneReponse = 1;
+    for (let i = 0; i < Rinput7.length; i++) {
+        if (Rinput7[i].checked) {
             reponseClient = i;
         }
     }
