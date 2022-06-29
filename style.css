@@ -10,7 +10,13 @@ body {
     margin: auto;
     background-color: white;
     padding: 1.75em;
-    color: #6c6767
+    color: #6c6767;
+}
+
+.container,
+form,
+input {
+    border-color: #df1515;
 }
 
 #gratuit {
@@ -54,7 +60,7 @@ p,
 }
 
 #button {
-    background-color: darkgreen;
+    background-color: rgb(57, 104, 57);
     color: white;
     align-items: center;
     padding: 10px 15px 10px 15px;
@@ -65,7 +71,8 @@ p,
 .input {
     height: 25px;
     width: 315px;
-    border-color: red;
+    border-color: rgb(240, 231, 231);
+
 }
 
 #containerSoumission {
@@ -229,9 +236,10 @@ img {
 }
 
 #button2 {
-    background-color: rgb(124, 238, 124);
+    background-color: rgb(68, 145, 68);
     margin-left: 85px;
     padding: 8px 13px 8px 15px;
+    color: white;
 }
 
 #containerSoumission {
@@ -281,4 +289,14 @@ img {
 
 #containeResults {
     display: none;
+}
+
+form,
+input {
+    cursor: pointer;
+    cursor: auto;
+}
+
+#timer {
+    margin-left: 255px;
 }
