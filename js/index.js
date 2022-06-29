@@ -22,15 +22,13 @@ let Rinput10 = document.querySelectorAll('.Rinput10');
 let Rinput11 = document.querySelectorAll('.Rinput11');
 let Rinput12 = document.querySelectorAll('.Rinput11');
 let Rinput13 = document.querySelectorAll('.Rinput13');
-let Rinput14 = document.querySelectorAllG('.Rinput14');
+let Rinput14 = document.querySelectorAll('.Rinput14');
 let nombreScore = document.getElementById('nombreScore');
 let score = 0;
 let button1 = document.querySelector('#button1');
 let quittezB = document.querySelectorAll('.quittezB')
-
-
-
-
+let mesInputs = document.querySelectorAll('input[type="radio"]');
+let mesSuivants = document.querySelectorAll("button#button2");
 
 const loginForm = document.querySelector('.loginForm')
 
@@ -61,7 +59,6 @@ questionForm.addEventListener('submit', (e) => {
     if (reponseClient == bonneReponse)
         score++
     console.log('score =' + score);
-
 
 
     containerQuestions01.style.display = 'block'
@@ -406,6 +403,7 @@ quittezB.forEach((il) => {
 })
 
 
+
 //quitter
 btnFinal.addEventListener('click', function () {
     questions.style.display = 'none';
@@ -413,6 +411,11 @@ btnFinal.addEventListener('click', function () {
 
 })
 
+mesInputs.forEach((el) => {
+    el.addEventListener('change', () => mesSuivants.forEach((but) => but.disabled = false))
 
+});
 
-
+mesSuivants.forEach((but) => {
+    but.addEventListener('click', () => mesSuivants.forEach((but) => but.disabled = true))
+})
