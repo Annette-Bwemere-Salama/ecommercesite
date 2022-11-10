@@ -1,35 +1,29 @@
-const person = {
-    name: "Annette",
-    age: 29,
-    greet() {
-        console.log("Hi, I am " + this.name);
-    }
-};
+// const { callbackify } = require("util");
 
-const printName = ({ name }) => {
-    console.log(name);
+const fetchDta = () => {
+    const promise = new Promise((resolve, reject) => {
+
+
+        setTimeout(() => {
+
+        }, 1500);
+    });
+    return promise;
 }
 
-printName(person)
 
-const { name, age } = person;
-console.log(name, age);
-// const copiedPerson = { ...person };
-// console.log(copiedPerson) ;
-// const hobbies = ["Sports", "Cooking"];
-// for (let hobby of hobbies) {
-//     console.log(hobby);
-// }
 
-// console.log(hobbies.map(hobby => 'Hobby' + hobby
-// ));
-// console.log(hobbies);
+setTimeout(() => {
+    console.log("Timer is done!");
+    fetchDta()
+    .then(text => {
+        console.log(text);
+      return fetchDta()
+    })
+    .then(text2 =>{
+        console.log(text2);
+    })
+}, 2000);
 
-// const copieArray = [...hobbies];
-// console.log(copieArray);
-
-// const toArray = (...arg) =>{
-//  return arg;
-// }
-
-// console.log(toArray(1,2,3,4));
+console.log("Hello Annette");
+console.log("Hi Bwemere");
