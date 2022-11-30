@@ -25,7 +25,7 @@ const server = http.createServer((req, res) => {
             const message = parseBody.split('=')[1];
             console.log(parseBody);
         })
-        fs.writeFileSync('message.txt', 'DUMMY Annette t\'appelle');
+        fs.writeFileSync('message.txt', message);
         res.statusCode = 302;
         res.setHeader('Location', '/');
         return res.end();
