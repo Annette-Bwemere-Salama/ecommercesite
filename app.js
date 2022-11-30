@@ -9,23 +9,22 @@ const server = http.createServer((req, res) => {
         res.write("<html>");
         res.write("<head><title>Entrez Message</title><head>")
         res.write("<body><form action='/message' method='POST'><input type='test' name='message'><button type='submit'>Send</button></form></body>");
-        res.write("<body><form><input ></form></body>")
         res.write("</html>")
         return res.end();
     }
     // console.log(req.url, req.method, req.headers);
     if (url === '/message' && method === 'POST') {
-        const body = []
+        const body = [];
         req.on('data', (chunk) => {
             console.log(chunk);
             body.push(chunk);
         });
-        res.on('end', () => {
+        req.on('end', () => {
             const parseBody = Buffer.concat(body).toString();
-            const message = parseBody.split('=')[1];
             console.log(parseBody);
-        })
-        fs.writeFileSync('message.txt', message);
+            const message = parseBody.split('=')[1];
+            fs.writeFileSync('message.txt', message);
+        });
         res.statusCode = 302;
         res.setHeader('Location', '/');
         return res.end();
